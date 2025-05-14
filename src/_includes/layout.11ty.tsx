@@ -12,7 +12,9 @@ export default function Layout({ title, content }: LayoutProps) {
         <title>{title}</title>
       </head>
 
-      <body dangerouslySetInnerHTML={{ __html: content }} />
+      <body>
+        <main dangerouslySetInnerHTML={{ __html: `<h1>${title}</h1>` + content }} />
+      </body>
     </html>
   );
 }
