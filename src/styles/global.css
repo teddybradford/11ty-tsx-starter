@@ -1,0 +1,38 @@
+@layer reset {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+@layer base {
+  * {
+    line-height: calc(1.15em + 4px);
+  }
+
+  html {
+    font-family: system-ui, ui-sans-serif, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+}

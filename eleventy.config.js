@@ -1,9 +1,14 @@
 import { renderToStaticMarkup } from 'react-dom/server';
 import 'tsx/esm';
 
+const inputDir = 'src';
+const outputDir = 'dist';
+
 export default function (eleventyConfig) {
-  eleventyConfig.setInputDirectory('src');
-  eleventyConfig.setOutputDirectory('dist');
+  eleventyConfig.setInputDirectory(inputDir);
+  eleventyConfig.setOutputDirectory(outputDir);
+
+  eleventyConfig.addPassthroughCopy(`${inputDir}/styles/**/*.css`);
 
   eleventyConfig.addExtension(['11ty.ts', '11ty.tsx'], {
     key: '11ty.js',
