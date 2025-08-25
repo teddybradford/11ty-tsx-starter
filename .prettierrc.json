@@ -1,7 +1,14 @@
 {
-  "printWidth": 100,
   "trailingComma": "all",
   "tabWidth": 2,
   "semi": false,
-  "singleQuote": true
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "options": {
+        "printWidth": 100
+      }
+    }
+  ]
 }
