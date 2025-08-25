@@ -1,7 +1,7 @@
 type LayoutProps = {
-  title: string;
-  content: string;
-};
+  title: string
+  content: string
+}
 
 export default function Layout({ title, content }: LayoutProps) {
   return (
@@ -18,5 +18,5 @@ export default function Layout({ title, content }: LayoutProps) {
         <main dangerouslySetInnerHTML={{ __html: `<h1>${title}</h1>` + content }} />
       </body>
     </html>
-  );
+  )
 }
