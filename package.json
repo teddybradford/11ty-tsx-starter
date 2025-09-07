@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "eleventy --serve --incremental",
     "build": "eleventy",
-    "lint": "tsc -b",
-    "format": "prettier -w ."
+    "lint": "tsc --build",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
