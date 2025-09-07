@@ -7,7 +7,7 @@
     "dev": "eleventy --serve --incremental",
     "build": "eleventy",
     "lint": "tsc -b",
-    "format": "prettier --write ."
+    "format": "prettier -w ."
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
